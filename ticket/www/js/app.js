@@ -1,4 +1,4 @@
-angular.module('starter', [ 'ionic'])
+angular.module('ticket', [ 'ionic', 'ticket.controllers', 'ticket.services' ])
 
 .run(function($ionicPlatform) {
 	$ionicPlatform.ready(function() {
@@ -22,7 +22,8 @@ angular.module('starter', [ 'ionic'])
 		url : '/booking',
 		views : {
 			'tab-booking' : {
-				templateUrl : 'partial/tab-booking.html'
+				templateUrl : 'partial/tab-booking.html',
+				controller : 'BookingController'
 			}
 		}
 	}).state('tab.orders', {
@@ -44,3 +45,6 @@ angular.module('starter', [ 'ionic'])
 	$urlRouterProvider.otherwise('/tab/dash');
 
 });
+
+angular.module('ticket.controllers', []);
+angular.module('ticket.services', []);
