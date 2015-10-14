@@ -42,7 +42,7 @@ angular.module('ticket', [ 'ionic', 'ticket.controllers', 'ticket.services' ])
 		}
 	});
 
-	$urlRouterProvider.otherwise('/tab/dash');
+	$urlRouterProvider.otherwise('/tab/booking');
 
 });
 
