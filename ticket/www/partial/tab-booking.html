@@ -1,18 +1,44 @@
-<ion-view view-title="Booking">
-  <ion-content class="padding">
-    <div class="list">
-        <div class="item">
-            <div class="row">
-                <div class="col col-10"></div>
-                <div class="col col-30">火星</div>
-                <div class="col col-20"><i class="ion-arrow-swap"></i></div>
-                <div class="col col-30">地球</div>
-                <div class="col col-10"></div>
-            </div>
-        </div>
-        <div class="item">2</div>
-        <div class="item">3</div>
-        <div class="item">4</div>
-    </div>
-  </ion-content>
-</ion-view>
+<ion-view view-title="Booking"> <ion-content class="padding">
+<div class="list">
+	<div class="item">
+		<div class="row">
+			<div class="col col-10"></div>
+			<div class="col col-30">火星</div>
+			<div class="col col-20">
+				<i class="ion-arrow-swap"></i>
+			</div>
+			<div class="col col-30">地球</div>
+			<div class="col col-10"></div>
+		</div>
+	</div>
+	<div class="item">
+		<div class="row" style="padding: 0;">
+			<div class="col col-30">
+				<label for="">Date</label>
+			</div>
+			<div class="col col-70">
+				<ionic-datepicker input-obj="datepickerObject">
+				<button class="button button-clear button-small button-dark"><strong>{{datepickerObject.inputDate | date:'yyyy-MM-dd'}}</strong></button>
+				</ionic-datepicker>
+			</div>
+		</div>
+	</div>
+	<div class="item">
+		<div class="row" style="padding: 0;">
+			<div class="col col-30">
+				<label for="">Date</label>
+			</div>
+			<div class="col col-70">
+				<select>
+		            <option>00:00 -- 24:00</option>
+		            <option>00:00 -- 06:00</option>
+		            <option>06:00 -- 12:00</option>
+		            <option>12:00 -- 18:00</option>
+		            <option>18:00 -- 24:00</option>
+		    </select>
+			</div>
+		</div>
+	</div>
+	<div class="item">4</div>
+</div>
+</ion-content> </ion-view>
