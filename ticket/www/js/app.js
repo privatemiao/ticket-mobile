@@ -1,4 +1,4 @@
-angular.module('ticket', [ 'ionic', 'ticket.controllers', 'ticket.services' ])
+angular.module('ticket', [ 'ionic', 'ticket.controllers', 'ticket.services', 'ionic-datepicker' ])
 
 .run(function($ionicPlatform) {
 	$ionicPlatform.ready(function() {
