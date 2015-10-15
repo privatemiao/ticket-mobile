@@ -14,11 +14,13 @@
 	<div class="item">
 		<div class="row" style="padding: 0;">
 			<div class="col col-30">
-				<label for="">Date</label>
+				<label for="">发车日期</label>
 			</div>
 			<div class="col col-70">
 				<ionic-datepicker input-obj="datepickerObject">
-				<button class="button button-clear button-small button-dark"><strong>{{datepickerObject.inputDate | date:'yyyy-MM-dd'}}</strong></button>
+				<button class="button button-clear button-small button-dark">
+					<strong>{{datepickerObject.inputDate | date:'yyyy-MM-dd'}}</strong>
+				</button>
 				</ionic-datepicker>
 			</div>
 		</div>
@@ -26,19 +28,37 @@
 	<div class="item">
 		<div class="row" style="padding: 0;">
 			<div class="col col-30">
-				<label for="">Date</label>
+				<label for="">发车时间</label>
 			</div>
 			<div class="col col-70">
-				<select>
-		            <option>00:00 -- 24:00</option>
-		            <option>00:00 -- 06:00</option>
-		            <option>06:00 -- 12:00</option>
-		            <option>12:00 -- 18:00</option>
-		            <option>18:00 -- 24:00</option>
-		    </select>
+				<select style="border: 0;">
+					<option>00:00 -- 24:00</option>
+					<option>00:00 -- 06:00</option>
+					<option>06:00 -- 12:00</option>
+					<option>12:00 -- 18:00</option>
+					<option>18:00 -- 24:00</option>
+				</select>
 			</div>
 		</div>
 	</div>
-	<div class="item">4</div>
+	<div class="item">
+		<div class="row" style="padding: 0;">
+			<div class="col col-30">
+				<label for="">席别</label>
+			</div>
+			<div class="col col-70">
+				<select style="border: 0;">
+					<option>不限</option>
+					<option>商务座</option>
+					<option>特等座</option>
+					<option>一等座</option>
+					<option>二等座</option>
+				</select>
+			</div>
+		</div>
+	</div>
+	<div class="item">
+	   <button class="button button-positive button-block">查询</button>
+	</div>
 </div>
 </ion-content> </ion-view>
